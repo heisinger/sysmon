@@ -1,0 +1,38 @@
+﻿<Window x:Class="SysMo_Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+
+
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+ 
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="IP Adresse" Width="100" VerticalAlignment="Top" HorizontalAlignment="left" />
+        <TextBox Name="ip" Width="200" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Username" Width="100" HorizontalAlignment="left" />
+        <TextBox Name="un" Width="200" HorizontalAlignment="Left" />
+        <Label Content="Passwort" Width="100" HorizontalAlignment="left" />
+        <TextBox Name="pass" Width="200" HorizontalAlignment="Left" />
+        <Button Name="b1" Content="Anmelden" Click="onAnmelden" Width="100" Height="30" HorizontalAlignment="Left" />
+        <Label Name="info" />
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+        <Label Name="status" Content="Connection" />
+        <TextBox Name="statusT" Text="offline" Background="Tomato" Width="200" />
+            <Label Name="sPW" Content="Anmeldung" />
+            <TextBox Name="statusPW" Width="200" Text="Nicht verifiziert" Background="Tomato" />
+            <Label Content="Registrierung" />
+            <TextBox Name="statusC" Width="200" />
+            <Label Name="comp" />
+            
+        </StackPanel>
+    </Grid>
+
+</Window>
